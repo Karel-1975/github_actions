@@ -1,7 +1,7 @@
 name: Multiple shells commands
 on:
   push:
-    branches:
+    branches:   
       - "main"
   pull_request:
     types: [closed, assigned, opened, reopened]
@@ -24,7 +24,7 @@ jobs:
         run: pwd
         shell: bash
       - name: print some default env variables
-        run: |
+        run: | 
           echo "HOME: ${HOME}"
           echo "GITHUB_WORKFLOW: ${GITHUB_WORKFLOW}"
           echo "GITHUB_ACTION: ${GITHUB_ACTION}"
